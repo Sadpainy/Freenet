@@ -4,7 +4,7 @@ A minimalist, pure Java, command-line built Android client for launching and man
 
 ## Overview
 
-This project serves as a proof-of-concept (POC) for running a decentralized Freenet node on an Android smartphone. Due to the restrictive background execution and cross-app communication policies introduced in Android 10 and higher, traditional methods of silently launching Termux services (e.g., via `RUN_COMMAND` broadcasts) are often intercepted and killed by the system.
+Due to the restrictive background execution and cross-app communication policies introduced in Android 10 and higher, traditional methods of silently launching Termux services (e.g., via `RUN_COMMAND` broadcasts) are often intercepted and killed by the system.
 
 To bypass these limitations, this application utilizes a "Physical Injection" method:
 1. The App constructs the required Bash commands.
